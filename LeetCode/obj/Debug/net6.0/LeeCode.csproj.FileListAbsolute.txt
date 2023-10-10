@@ -1,0 +1,15 @@
+C:\Users\Simofatt\LeatCode\LeatCode\bin\Debug\net6.0\LeeCode.exe
+C:\Users\Simofatt\LeatCode\LeatCode\bin\Debug\net6.0\LeeCode.deps.json
+C:\Users\Simofatt\LeatCode\LeatCode\bin\Debug\net6.0\LeeCode.runtimeconfig.json
+C:\Users\Simofatt\LeatCode\LeatCode\bin\Debug\net6.0\LeeCode.dll
+C:\Users\Simofatt\LeatCode\LeatCode\bin\Debug\net6.0\LeeCode.pdb
+C:\Users\Simofatt\LeatCode\LeatCode\obj\Debug\net6.0\LeeCode.csproj.AssemblyReference.cache
+C:\Users\Simofatt\LeatCode\LeatCode\obj\Debug\net6.0\LeeCode.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Simofatt\LeatCode\LeatCode\obj\Debug\net6.0\LeeCode.AssemblyInfoInputs.cache
+C:\Users\Simofatt\LeatCode\LeatCode\obj\Debug\net6.0\LeeCode.AssemblyInfo.cs
+C:\Users\Simofatt\LeatCode\LeatCode\obj\Debug\net6.0\LeeCode.csproj.CoreCompileInputs.cache
+C:\Users\Simofatt\LeatCode\LeatCode\obj\Debug\net6.0\LeeCode.dll
+C:\Users\Simofatt\LeatCode\LeatCode\obj\Debug\net6.0\refint\LeeCode.dll
+C:\Users\Simofatt\LeatCode\LeatCode\obj\Debug\net6.0\LeeCode.pdb
+C:\Users\Simofatt\LeatCode\LeatCode\obj\Debug\net6.0\LeeCode.genruntimeconfig.cache
+C:\Users\Simofatt\LeatCode\LeatCode\obj\Debug\net6.0\ref\LeeCode.dll
