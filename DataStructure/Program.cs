@@ -1,5 +1,6 @@
 ﻿using DataStructure.Arrays;
 using DataStructure.Dictionnary;
+using LeetCode.Algorithms;
 
 namespace DataStructure
 
@@ -45,6 +46,19 @@ namespace DataStructure
             //Move a item of an array in the end 
             var array = ArrayLibrary.SwapArray(new[] { 1, 2, 3, 4, 5, 6, 7 }, 2);
             Console.WriteLine($"Swaaping Array {string.Join(" , "  , array)}" );
+
+            //sorting an array of ints 
+
+            var arraySort = ArrayLibrary.SortAnAray(new[] { 1,3,2,5,4 });
+            Console.WriteLine($"Swaaping Array {string.Join(" , ", arraySort)}");
+
+
+
+
+
+
+
+
 
 
 
