@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "LeetCode/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/LeetCode.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LeetCode.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "LeetCode/1.0.0": {
+      "type": "project",
+      "path": "../LeetCode/LeetCode.csproj",
+      "msbuildProject": "../LeetCode/LeetCode.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "LeetCode >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Simofatt\\.nuget\\packages\\": {}
@@ -13,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Simofatt\\LeatCode\\DataStructure\\DataStructure.csproj",
+      "projectUniqueName": "C:\\Users\\Simofatt\\LeetCode\\DataStructure\\DataStructure.csproj",
       "projectName": "DataStructure",
-      "projectPath": "C:\\Users\\Simofatt\\LeatCode\\DataStructure\\DataStructure.csproj",
+      "projectPath": "C:\\Users\\Simofatt\\LeetCode\\DataStructure\\DataStructure.csproj",
       "packagesPath": "C:\\Users\\Simofatt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Simofatt\\LeatCode\\DataStructure\\obj\\",
+      "outputPath": "C:\\Users\\Simofatt\\LeetCode\\DataStructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Simofatt\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Simofatt\\LeetCode\\LeetCode\\LeetCode.csproj": {
+              "projectPath": "C:\\Users\\Simofatt\\LeetCode\\LeetCode\\LeetCode.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
