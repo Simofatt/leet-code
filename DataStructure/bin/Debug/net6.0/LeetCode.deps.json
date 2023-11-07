@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "DataStructure/1.0.0": {
-        "dependencies": {
-          "LeetCode": "1.0.0"
-        },
-        "runtime": {
-          "DataStructure.dll": {}
-        }
-      },
       "LeetCode/1.0.0": {
         "runtime": {
           "LeetCode.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "DataStructure/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "LeetCode/1.0.0": {
       "type": "project",
       "serviceable": false,
