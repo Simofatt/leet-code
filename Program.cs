@@ -60,10 +60,13 @@ namespace LeetCode {
             Console.WriteLine("Triplet : " + CountTriplets.countGoodTriplets(arr, 7, 2, 3));
 
 
+            //REMOVE ELEMENTS 
+          
+            RemoveElement.RemoveElements();
 
 
-
-
+            // REMOVE DUPLICATES 
+            RemoveDuplicates.RemoveDuplicates2();
 
 
             Console.ReadKey();
