@@ -1,4 +1,5 @@
 ﻿using LeetCode.Algorithms;
+using LeetCode.Algorithms.Top100;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -67,6 +68,12 @@ namespace LeetCode {
 
             // REMOVE DUPLICATES 
             RemoveDuplicates.RemoveDuplicates2();
+
+
+            LetterCombinations.LetterCombinations2("23");
+
+
+
 
 
             Console.ReadKey();

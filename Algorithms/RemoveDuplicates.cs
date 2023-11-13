@@ -25,8 +25,9 @@ namespace LeetCode.Algorithms
             }
           
             var uniqueValues = keyValuePairs.Values.ToArray();
-            Array.Copy(uniqueValues, nums, nums.Length);
+            Array.Copy(uniqueValues, nums, uniqueValues.Length);
 
+            Console.WriteLine("");
             Console.WriteLine("****************************** Remove Duplicates********************");
             Console.WriteLine(string.Join(" , ", nums)); 
             
@@ -34,5 +35,8 @@ namespace LeetCode.Algorithms
 
             return count;
         }
-    }
+
+      
+        }
+    
 }
