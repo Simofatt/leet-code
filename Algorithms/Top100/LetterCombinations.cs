@@ -29,24 +29,28 @@ namespace LeetCode.Algorithms.Top100
                 {'9',new[]{"w","x","y","z" } } ,
 
             };
-        public static void LetterCombinationsM(string digits)
+        public static IList<string> LetterCombinationsM(string digits)
         {
 
          
             IList<string> AllCombins = new List<string>();
-          //  combins(digits,0);
+            combins(digits,0,"",AllCombins);
+            return AllCombins;
 
 
  
 
         }
 
-        public static void combins(string digits,int j,string current)
+        public static void combins(string digits,int j,string current,IList<string> AllCombins)
         {
-            IList<string> AllCombins = new List<string>();
-        
 
-            if (digits.Length <= j) AllCombins.Add(current);
+            if (digits.Length <= j)
+            {
+                if (!current.Equals("")) AllCombins.Add(current);
+
+
+            }
             else
             {
 
@@ -54,14 +58,16 @@ namespace LeetCode.Algorithms.Top100
 
                 for (var i = 0; i < values.Length; i++)
                 {
-                    current = current + values[i];
-                    
+                    var newCurrent = current + values[i];
 
-                    combins(digits, j++,current);
+
+                    combins(digits, j + 1, newCurrent, AllCombins);
                 }
-                
+
             }
         }
+
+
 
 
 
