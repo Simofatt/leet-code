@@ -70,7 +70,7 @@ namespace LeetCode {
             RemoveDuplicates.RemoveDuplicates2();
 
 
-            LetterCombinations.LetterCombinations2("23");
+            LetterCombinations.LetterCombinationsM("");
 
 
 
