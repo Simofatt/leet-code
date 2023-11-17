@@ -13,18 +13,19 @@ namespace LeetCode.Algorithms.Top100
 
             IList<IList<int>> outputs = new List<IList<int>>();
             IList<int> output = new List<int>();
-            reccursive(outputs, target,candidates,0,output);
+            reccursive(outputs, target,candidates,0,output,0);
             return outputs;
 
         }
 
 
-        public static void reccursive(IList<IList<int>> outputs, int target, int[]candidates,int sum, IList<int> output)
+        public static void reccursive(IList<IList<int>> outputs, int target, int[]candidates,int sum, IList<int> output,int index)
         {
 
             /*Input: candidates = [2,3,6,7], target = 7
                Output: [[2,2,3],[7]] */
 
+            
             
             if (sum >= target)
             {
@@ -38,14 +39,16 @@ namespace LeetCode.Algorithms.Top100
             else {
 
 
-                for (var i = 0; i < candidates.Length; i++)
+                for (var i = index; i < candidates.Length; i++)
                 {
 
                         sum += candidates[i];
                         output.Add(candidates[i]); 
-                        reccursive(outputs, target, candidates, sum,output);
+                        reccursive(outputs, target, candidates, sum,output,index);
+                        index++;
                         sum -= candidates[i];
                         output.RemoveAt(output.Count -1);
+
                     
 
                 }

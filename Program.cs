@@ -69,17 +69,20 @@ namespace LeetCode {
             // REMOVE DUPLICATES 
             RemoveDuplicates.RemoveDuplicates2();
 
-
+            //LETTER COMBINATION
             LetterCombinations.LetterCombinationsM("23");
 
-            //adding the day3
+           //GENERATE PARENHESES
 
             GenerateParentheses.GenerateParenthesis2(3);
 
+            //COMBINATION SUM :
             var arr3 = new[] { 2, 3, 6, 7 };
-
-
             CombinationSum.CombinationSum2(arr3,7);
+
+            //PERMUTATIONS
+            Permutations.Permute(new[] {1,2,3}); 
+
 
             Console.ReadKey();
         }
