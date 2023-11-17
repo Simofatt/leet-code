@@ -26,9 +26,14 @@ namespace LeetCode.Algorithms.Top100
                Output: [[2,2,3],[7]] */
 
             
-            if (sum > target)
+            if (sum >= target)
             {
-                outputs.Add(output);
+                if (sum == target)
+                {
+                    
+                    outputs.Add(output.ToArray());
+                }
+                return;
             }
             else {
 
@@ -36,22 +41,12 @@ namespace LeetCode.Algorithms.Top100
                 for (var i = 0; i < candidates.Length; i++)
                 {
 
-                    sum += candidates[i];
-
-
-
-                    if (sum == target)
-                    {
-
-                        output.Add(candidates[i]);
-                        ;//outputs.Add(output);
-                    }
-                    else
-                    {
-                        IList<int> NewOutput = new List<int>();
-                        NewOutput.Add(candidates[i]);
-                        reccursive(outputs, target, candidates, sum,NewOutput);
-                    }
+                        sum += candidates[i];
+                        output.Add(candidates[i]); 
+                        reccursive(outputs, target, candidates, sum,output);
+                        sum -= candidates[i];
+                        output.RemoveAt(output.Count -1);
+                    
 
                 }
                 
