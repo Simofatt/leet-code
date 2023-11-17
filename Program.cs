@@ -74,9 +74,12 @@ namespace LeetCode {
 
             //adding the day3
 
+            GenerateParentheses.GenerateParenthesis2(3);
+
+            var arr3 = new[] { 2, 3, 6, 7 };
 
 
-
+            CombinationSum.CombinationSum2(arr3,7);
 
             Console.ReadKey();
         }
