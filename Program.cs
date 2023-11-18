@@ -81,9 +81,10 @@ namespace LeetCode {
             CombinationSum.CombinationSum2(arr3,7);
 
             //PERMUTATIONS
-            Permutations.Permute(new[] {1,2,3}); 
+            Permutations.Permute(new[] {1,2,3});
 
-
+            //
+            Subsets.Subsets2(new[] {1,2,3});
             Console.ReadKey();
         }
     }
