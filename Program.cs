@@ -103,6 +103,8 @@ namespace LeetCode {
            Console.WriteLine( "THERE IS : "+ConnectedComponentsCount.ConnectedCountFunc()+" COMPONNENTS" );
 
 
+            Console.WriteLine("THE LARGEST COMPONENT HAS : " + LargestComponenet.LargestComponentFunc() + "NODES");
+
 
 
             Console.ReadKey();
