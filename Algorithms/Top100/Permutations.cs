@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -33,7 +33,7 @@ namespace LeetCode.Algorithms.Top100
             {
 
                 outputs.Add(candidates.ToArray());
-                //candidates.Clear();
+               
                 return;
             }
             else

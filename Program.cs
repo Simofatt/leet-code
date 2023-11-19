@@ -1,4 +1,5 @@
 ﻿using LeetCode.Algorithms;
+using LeetCode.Algorithms.Graph;
 using LeetCode.Algorithms.Top100;
 using System;
 using System.Collections.Generic;
@@ -83,9 +84,26 @@ namespace LeetCode {
             //PERMUTATIONS
             Permutations.Permute(new[] {1,2,3});
 
-            //
+            //SUBSET
             Subsets.Subsets2(new[] {1,2,3});
+
+            FindLargest.LargestNumber(new[] { 3, 30, 34, 5, 9 });
+            
+
+
+            //GRAPH HAS PATH ; 
+            bool resultHasPath =HasPath.DepthFirstRecu('f', 'k');
+            Console.WriteLine($"has path : {resultHasPath}");
+
+            // UNDIRECTED PATH : 
+            UndirectedPath.UndirectedPathFunc('j', 'm'); 
+
+
+
+
             Console.ReadKey();
         }
+
+
     }
 }
