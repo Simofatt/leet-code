@@ -9,9 +9,16 @@ namespace LeetCode.Algorithms.Graph
     public static  class UndirectedPath
     {
 
-     
-        
-           static List<char[]> edges = new List<char[]>
+        /*
+       * undirected path
+           Write a 
+          function, undirectedPath, that takes in an array of edges for an undirected graph and two nodes 
+          (nodeA, nodeB). The function should return a boolean indicating whether or not there exists a 
+          path between nodeA and nodeB.
+          public static  class UndirectedPath 
+      */
+
+        static List<char[]> edges = new List<char[]>
         {
             new char[] { 'i', 'j' },
             new char[] { 'k', 'i' },
@@ -39,15 +46,14 @@ namespace LeetCode.Algorithms.Graph
                 if (current == nodeB) return true;
 
                 if (!visited.Contains(current))
+                { visited.Add(current); 
+
+                foreach (var neighboor in graph[current])
                 {
-                    visited.Add(current);
 
-                    foreach (var neighboor in graph[current])
-                    {
-
-                        stack.Push(neighboor);
-
-                    }
+                    stack.Push(neighboor);
+                      
+                }
                 }
             }
             return false;

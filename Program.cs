@@ -96,7 +96,11 @@ namespace LeetCode {
             Console.WriteLine($"has path : {resultHasPath}");
 
             // UNDIRECTED PATH : 
-            UndirectedPath.UndirectedPathFunc('j', 'm'); 
+            UndirectedPath.UndirectedPathFunc('j', 'm');
+
+
+            //CONNECTED COMPONENETS COUNT 
+           Console.WriteLine( "THERE IS : "+ConnectedComponentsCount.ConnectedCountFunc()+" COMPONNENTS" );
 
 
 
