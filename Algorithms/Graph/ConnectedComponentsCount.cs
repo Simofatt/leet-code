@@ -11,6 +11,11 @@ namespace LeetCode.Algorithms.Graph
     public static class ConnectedComponentsCount
     {
 
+        /*https://structy.net/problems/connected-components-count
+         * Write a function, connectedComponentsCount, that takes in the adjacency list of an undirected graph.
+         * The function should return the number of connected components within the graph. 
+         */
+
         static Dictionary<char, List<char>> graph = new Dictionary<char, List<char>>
         {
             { '0', new List<char> { '8', '1','5' } },

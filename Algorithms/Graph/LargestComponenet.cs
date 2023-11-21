@@ -8,6 +8,12 @@ using System.Threading.Tasks;
 
 namespace LeetCode.Algorithms.Graph
 {
+
+    /*largest component
+    Write a function, largestComponent, that takes in the adjacency list of an undirected graph. The function should return the size 
+    of the largest connected component in the graph.
+   URL : https://structy.net/problems/largest-component
+     */
     public static class LargestComponenet
     {
 
@@ -32,16 +38,9 @@ namespace LeetCode.Algorithms.Graph
             {
                 if (Explore(item.Key))
                 {
-
-                 
-
                     ComponentCount.Add(visited.Count);
                     visited.Clear(); 
-                    
-
                 }
-
-
             }
 
             ComponentCount.Sort();
