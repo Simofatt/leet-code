@@ -87,7 +87,7 @@ namespace LeetCode {
             //SUBSET
             Subsets.Subsets2(new[] {1,2,3});
 
-            FindLargest.LargestNumber(new[] { 3, 30, 34, 5, 9 });
+            FindLargest.LargestNumber(new[] { 10,2,0 });
             
 
 
@@ -104,6 +104,8 @@ namespace LeetCode {
 
 
             Console.WriteLine("THE LARGEST COMPONENT HAS : " + LargestComponenet.LargestComponentFunc() + "NODES");
+
+            Console.WriteLine("The shortest path is : "+ ShortestPath.Explore('a' ,'e'));
 
 
 
