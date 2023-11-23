@@ -3,6 +3,7 @@ using LeetCode.Algorithms.Graph;
 using LeetCode.Algorithms.Maths;
 using LeetCode.Algorithms.Sorting;
 using LeetCode.Algorithms.Top100;
+using LeetCode.Algorithms.WindowSliding;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -122,6 +123,8 @@ namespace LeetCode {
             //
             ThreeConsecutiveNumbers.SumOfThree(33);
 
+            //SLIDING WINDOW MAX OF THE  3 CONSECUTIVE NUMBERS
+            MaxOfThreeConsecutive.max(new[] { 8, 1, 2, 2, 3 });
 
 
             Console.ReadKey();
