@@ -1,5 +1,7 @@
 ﻿using LeetCode.Algorithms;
 using LeetCode.Algorithms.Graph;
+using LeetCode.Algorithms.Maths;
+using LeetCode.Algorithms.Sorting;
 using LeetCode.Algorithms.Top100;
 using System;
 using System.Collections.Generic;
@@ -106,6 +108,19 @@ namespace LeetCode {
             Console.WriteLine("THE LARGEST COMPONENT HAS : " + LargestComponenet.LargestComponentFunc() + "NODES");
 
             Console.WriteLine("The shortest path is : "+ ShortestPath.Explore('a' ,'e'));
+
+
+            //Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is,
+            //for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i]. 
+
+
+           
+            SmallerThanTheCurr.SmallerNumbersThanCurrent(new[] { 8, 1, 2, 2, 3 } );
+
+
+
+            //
+            ThreeConsecutiveNumbers.SumOfThree(33);
 
 
 
