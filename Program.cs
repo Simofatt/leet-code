@@ -127,6 +127,9 @@ namespace LeetCode {
             MaxOfThreeConsecutive.max(new[] { 8, 1, 2, 2, 3 });
 
 
+            //FIND LONGEST SUBSTRING 
+            LongestSubstring.Substring("abcdefa");    
+
             Console.ReadKey();
         }
 

@@ -28,7 +28,7 @@ namespace LeetCode.Algorithms.WindowSliding
                 
                 for (int i = index; i < index + 3; i++)
                 {
-                    ThreeNums[i - index] = nums[i]
+                    ThreeNums[i - index] = nums[i];
                 }
 
                 currSum = ThreeNums.Sum();
