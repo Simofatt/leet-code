@@ -4,6 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace LeetCode.Algorithms
 {
@@ -18,57 +19,61 @@ namespace LeetCode.Algorithms
 
         public static string LargestNumber(int[] nums)
         {
-            ToGraph(nums);
 
 
-            foreach (var item in graph)
-            { 
-                if (recurssive(item.Key, nums))
-                {
-                    //visited.Remove(item.Key);
-                    curr = item.Key;
-                    findLargest.Add(curr);
-                }
+         
+
+            List<int> candidate = new List<int>();
+            HashSet<int> visited = new HashSet<int>();
+            List<List<int>> output = new();
+            List<string> ints = new ();
+
+            recurssive(nums, candidate, visited,output);
+
+
+            foreach(var item in output)
+            {
+                  ints.Add(string.Join("",item)); 
             }
+            Console.Write("");
+            ints.Sort();
 
-
-
-            return "";
+            return ints[ints.Count -1].ToString();
         }
 
-        public static bool recurssive(string node, int[] nums)
+        public static void recurssive(int[] nums, List<int> candidate, HashSet<int> visited, List<List<int>> output)
         {
 
             /*[10,2,0]  */
 
-            Queue<string> queue = new Queue<string>();
-            queue.Enqueue(node);
+
+            //
+            if (nums.Length == candidate.Count) output.Add(candidate.ToList()); 
+
+
+             for(var i =0; i< nums.Length; i++)
+            {
+
+                if (!visited.Contains(i))
+                {
+                    visited.Add(i);
+                    candidate.Add(nums[i]); 
+                    recurssive(nums,candidate, visited, output);
+                    visited.Remove(i);
+                    candidate.RemoveAt(candidate.Count - 1);
+                }
+            }
+
+         
 
             
 
 
-            while (queue.Count > 0)
-            {
-                if (nums.Length == visited.Count+1) return true;
+                
 
-                var deque = queue.Dequeue();
-                visited.Remove(node);
+           
 
-
-                foreach (var neighboor in graph[deque])
-                {
-
-                    if (!visited.Contains(neighboor))
-                    {
-                        visited.Add(neighboor);
-                        queue.Enqueue(neighboor);
-
-                    }
-                }
-
-            }
-
-            return false;
+           
 
         }
 

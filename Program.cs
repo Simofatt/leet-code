@@ -90,7 +90,7 @@ namespace LeetCode {
             //SUBSET
             Subsets.Subsets2(new[] {1,2,3});
 
-            FindLargest.LargestNumber(new[] { 10,2,0 });
+            FindLargest.LargestNumber(new[] { 8308, 8308, 830 });
             
 
 
