@@ -2,6 +2,7 @@
 using LeetCode.Algorithms.Graph;
 using LeetCode.Algorithms.Maths;
 using LeetCode.Algorithms.Sorting;
+using LeetCode.Algorithms.Strings;
 using LeetCode.Algorithms.Top100;
 using LeetCode.Algorithms.WindowSliding;
 using System;
@@ -128,8 +129,13 @@ namespace LeetCode {
 
 
             //FIND LONGEST SUBSTRING 
-            LongestSubstring.Substring("abcdefa");    
+            LongestSubstring.Substring("abcdefa");
 
+
+            // ISLAND COUNT 
+            IslandCount.NumIslands();
+
+            KidsWithCandiesC.GcdOfStrings("ABABAB", "ABAB");
             Console.ReadKey();
         }
 
