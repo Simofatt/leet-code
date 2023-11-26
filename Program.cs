@@ -2,6 +2,7 @@
 using LeetCode.Algorithms.Graph;
 using LeetCode.Algorithms.Maths;
 using LeetCode.Algorithms.Sorting;
+using LeetCode.Algorithms.Strings;
 using LeetCode.Algorithms.Top100;
 using LeetCode.Algorithms.WindowSliding;
 using System;
@@ -90,7 +91,7 @@ namespace LeetCode {
             //SUBSET
             Subsets.Subsets2(new[] {1,2,3});
 
-            FindLargest.LargestNumber(new[] { 10,2,0 });
+            FindLargest.LargestNumber(new[] { 8308, 8308, 830 });
             
 
 
@@ -128,8 +129,13 @@ namespace LeetCode {
 
 
             //FIND LONGEST SUBSTRING 
-            LongestSubstring.Substring("abcdefa");    
+            LongestSubstring.Substring("abcdefa");
 
+
+            // ISLAND COUNT 
+            IslandCount.NumIslands();
+
+            KidsWithCandiesC.GcdOfStrings("ABABAB", "ABAB");
             Console.ReadKey();
         }
 
