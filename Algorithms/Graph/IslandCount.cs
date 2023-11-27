@@ -51,12 +51,7 @@ namespace LeetCode.Algorithms.Graph
                 return false;
             }
 
-            
-
-
-
-
-
+ 
             var nodeVisited = line.ToString() + col.ToString();
                 if (!visited.Contains(nodeVisited))
                         {

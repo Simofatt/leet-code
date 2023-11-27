@@ -135,7 +135,8 @@ namespace LeetCode {
             // ISLAND COUNT 
             IslandCount.NumIslands();
 
-            KidsWithCandiesC.GcdOfStrings("ABABAB", "ABAB");
+            ReverseString.ReverseWords("a good  example");
+            KidsWithCandiesC.KidsWithCandies(new[] {1,2,3,5} , 3);
             Console.ReadKey();
         }
 
