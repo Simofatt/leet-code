@@ -137,6 +137,9 @@ namespace LeetCode {
 
             ReverseString.ReverseWords("a good  example");
             KidsWithCandiesC.KidsWithCandies(new[] {1,2,3,5} , 3);
+
+
+            stringCompression.Compress(new[] { 'a', 'a',  'b', 'b', 'c', 'c', 'c' });
             Console.ReadKey();
         }
 
