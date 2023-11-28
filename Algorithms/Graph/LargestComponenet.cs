@@ -25,41 +25,42 @@ namespace LeetCode.Algorithms.Graph
             { '8', new List<char> { '0','5' } },
             { '2', new List<char> {'3','4' } },
             { '3', new List<char> {'2','4' } },
-            { '4', new List<char>{'4','2' } }
+            { '4', new List<char>{'3','2' } }
         };
         static HashSet<char> visited = new HashSet<char>();
 
         static List<int>  ComponentCount = new List<int>(); 
+        
         public static int LargestComponentFunc()
         {
 
            
             foreach (var item in graph)
             {
-                if (Explore(item.Key))
-                {
-                    ComponentCount.Add(visited.Count);
-                    visited.Clear(); 
-                }
+               
+
+                var size =  Explore(item.Key); 
+                ComponentCount.Add(size);
             }
 
             ComponentCount.Sort();
             return ComponentCount[ComponentCount.Count -1];
         }
 
-        public static bool Explore(char current)
+        public static int Explore(char current)
         {
-            if (visited.Contains(current)) return false;
+            if (visited.Contains(current)) return 0;
 
             visited.Add(current);
+            var size = 1;
             foreach (var neighboor in graph[current])
             {
-                Explore(neighboor);
+               size += Explore(neighboor);
 
             }
 
 
-            return true;
+            return size;
         }
 
     }
