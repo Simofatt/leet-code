@@ -139,6 +139,7 @@ namespace LeetCode {
             KidsWithCandiesC.KidsWithCandies(new[] {1,2,3,5} , 3);
 
 
+            //String comprerssion
             stringCompression.Compress(new[] { 'a', 'a',  'b', 'b', 'c', 'c', 'c' });
             Console.ReadKey();
         }
