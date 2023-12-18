@@ -1,4 +1,5 @@
 ﻿using LeetCode.Algorithms;
+using LeetCode.Algorithms.Arrays;
 using LeetCode.Algorithms.Graph;
 using LeetCode.Algorithms.Maths;
 using LeetCode.Algorithms.Sorting;
@@ -13,7 +14,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode {
+namespace LeetCode
+{
     class Program {
         public static void Main(string[] args)
         {
@@ -141,6 +143,8 @@ namespace LeetCode {
 
             //STRING COMPRESSION
             stringCompression.Compress(new[] { 'a', 'a',  'b', 'b', 'c', 'c', 'c' });
+
+            RotElement.Rotate(new[] { 1, 2, 3, 4, 5, 6, 7 },3);
             Console.ReadKey();
         }
 
