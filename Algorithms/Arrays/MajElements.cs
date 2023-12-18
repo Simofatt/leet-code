@@ -34,19 +34,38 @@ namespace LeetCode.Algorithms.Arrays
             
             }
 
-         foreach(var key in keyValuePairs)
-            {
-                if(key.Value > max  )
-                {
-                    max = key.Value;  
-                    majoelement = key.Key;
-                }
-                
-            }
+
+             max = keyValuePairs.Values.Max(); 
+             majoelement= keyValuePairs.FirstOrDefault(kv => kv.Key == max).Key;
+
+
+        
+         
           
             
             return majoelement ; 
         }
-    
+
+   
+
+
+        /* optimized : public class Solution {
+        public int MajorityElement(int[] nums)
+        {
+            var dict = new Dictionary<int, int>();
+            foreach (var num in nums)
+            {
+                if (!dict.ContainsKey(num))
+                    dict.Add(num, 1);
+                else
+                    dict[num] += 1;
+            }
+            int biggest = dict.Values.Max();
+
+            return dict.First(k => k.Value == biggest).Key;
+        }
+    }
+       */
+
 }
 }
