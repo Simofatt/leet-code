@@ -26,7 +26,7 @@ namespace LeetCode.Algorithms.Sorting
                     {
                         if (i != j)
                         {
-                            if (currentChar == chars[j]) chars[i+1] = count++; 
+                           // if (currentChar == chars[j]) chars[i+1] = count++; 
                         }
                     }
                     visited.Add(currentChar);
