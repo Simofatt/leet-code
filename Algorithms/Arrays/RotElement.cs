@@ -14,18 +14,17 @@ namespace LeetCode.Algorithms.Arrays
  
     public class RotElement
     {
-
         public static void Rotate(int[] nums, int k)
         {
-            var temp = 0;
+            var tempI = 0;
             var indexOfElement = nums.Length -1;
             var tempJ = 0;
             
-          
+            
             for(int i = 0; i < nums.Length; i++)
             {
                 if (k == i) { break; }
-                temp = nums[i];
+                tempI = nums[i];
                 var elementToMove=  nums[indexOfElement];
                 nums[i] = elementToMove;
 
@@ -35,18 +34,8 @@ namespace LeetCode.Algorithms.Arrays
                     tempJ = nums[indexOfElement];
                     nums[j] = tempJ; 
                 }
-                nums[i+1] = temp;
+                nums[i+1] = tempI;
                 indexOfElement = nums.Length - 1;
-               
-
-              
-
-
-
-
-
-
-
             }
            
         }

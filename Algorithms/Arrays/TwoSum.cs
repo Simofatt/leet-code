@@ -8,7 +8,7 @@ namespace LeetCode.Algorithms.Arrays
 {
     public static class TwoSum
     {
-       
+        //https://leetcode.com/problems/two-sum/description/
 
         public static int[] TwoSumm(int[] nums, int target)
         {
