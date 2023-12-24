@@ -144,7 +144,16 @@ namespace LeetCode
             //STRING COMPRESSION
             stringCompression.Compress(new[] { 'a', 'a',  'b', 'b', 'c', 'c', 'c' });
 
+            IList<string> strings = new List<string>() { "aaaa", "aaa" }; 
+            WordBreak.WordBreaks("aaaaaaa", strings); 
+
             RotElement.Rotate(new[] { 1, 2, 3, 4, 5, 6, 7 },3);
+
+            //DETECT DUPLICATE 
+            Console.Write(DetectDuplicate.duplicate(new[] { 1, 2, 37, 56, 87 }));
+
+            CountOccurence.count("@leetCODE@$/",3);
+
             Console.ReadKey();
         }
 

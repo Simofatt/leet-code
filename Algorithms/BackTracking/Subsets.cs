@@ -19,7 +19,7 @@ namespace LeetCode.Algorithms.Top100
            Output: [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]] */
         public static void recursive(IList<IList<int>> outputs, IList<int> candidates, int[] nums, int index)
         {
-            outputs.Add(candidates.ToList()); // Add the current subset to the result
+            outputs.Add(candidates.ToList()); // Add the current subset to the results
 
             for (int i = index; i < nums.Length; i++)
             {
