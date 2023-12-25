@@ -18,16 +18,21 @@ namespace LeetCode.Algorithms.Arrays
 
         public static bool DFS(string s, Dictionary<string,bool> memo,HashSet<string> dict)
         {
+            if(memo.ContainsKey(s)) { return memo[s]; }
+            if (dict.Contains(s)) return true;
             var word = ""; 
             for(var i= 0;i<s.Length;i++)
             {
                 word = s.Substring(0, i);
                 if (dict.Contains(word) && DFS(s.Substring(i), memo, dict))
                 {
-                    return true; 
+                    memo[s] = true;
+                     return true; 
 
                 }
             }
+            memo[s] = false;
+
             return false;
 
         }
