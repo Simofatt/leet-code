@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace LeetCode.Algorithms
+namespace LeetCode.Algorithms.Graph
 {
     public static class FindLargest
     {
@@ -21,24 +21,24 @@ namespace LeetCode.Algorithms
         {
 
 
-         
+
 
             List<int> candidate = new List<int>();
             HashSet<int> visited = new HashSet<int>();
             List<List<int>> output = new();
-            List<string> ints = new ();
+            List<string> ints = new();
 
-            recurssive(nums, candidate, visited,output);
+            recurssive(nums, candidate, visited, output);
 
 
-            foreach(var item in output)
+            foreach (var item in output)
             {
-                  ints.Add(string.Join("",item)); 
+                ints.Add(string.Join("", item));
             }
             Console.Write("");
             ints.Sort();
 
-            return ints[ints.Count -1].ToString();
+            return ints[ints.Count - 1].ToString();
         }
 
         public static void recurssive(int[] nums, List<int> candidate, HashSet<int> visited, List<List<int>> output)
@@ -48,32 +48,32 @@ namespace LeetCode.Algorithms
 
 
             //
-            if (nums.Length == candidate.Count) output.Add(candidate.ToList()); 
+            if (nums.Length == candidate.Count) output.Add(candidate.ToList());
 
 
-             for(var i =0; i< nums.Length; i++)
+            for (var i = 0; i < nums.Length; i++)
             {
 
                 if (!visited.Contains(i))
                 {
                     visited.Add(i);
-                    candidate.Add(nums[i]); 
-                    recurssive(nums,candidate, visited, output);
+                    candidate.Add(nums[i]);
+                    recurssive(nums, candidate, visited, output);
                     visited.Remove(i);
                     candidate.RemoveAt(candidate.Count - 1);
                 }
             }
 
-         
-
-            
 
 
-                
 
-           
 
-           
+
+
+
+
+
+
 
         }
 

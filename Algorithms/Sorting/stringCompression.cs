@@ -10,6 +10,7 @@ namespace LeetCode.Algorithms.Sorting
     public static  class stringCompression
     {
 
+        //https://leetcode.com/problems/string-compression/
         public static int Compress(char[] chars)
         {
             HashSet<char> visited = new HashSet<char>(); 

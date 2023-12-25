@@ -19,45 +19,32 @@ namespace LeetCode.Algorithms.WindowSliding
 
         public static int Substring(string s)
         {
-
-
-           
             if(s== null || s.Length == 0) return 0;
 
             HashSet<int> result = new HashSet<int>();
 
-       
             var left = 0;
             var max = 0;
             var right = 0;
 
-
             while(right < s.Length) {
                 char current  = s[right];
-
-              
 
                 while(result.Contains(current) )
                 {
                     result.Remove(s[left]); 
                     left++;
                 }
-            
-
-                if(result.Contains(current))
-                {
-                    max = Math.Max(max, result.Count);
-                }
 
                 result.Add(current);
                 right++;
+              
+                max = Math.Max(max, result.Count);
+                
+
+              
             } 
            
-               
-                  
-  
-                
-            
                 if(left ==0)
             {
                 max = Math.Max(max, result.Count);
