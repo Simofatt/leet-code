@@ -14,7 +14,7 @@ namespace LeetCode.Algorithms.Strings
 
             Dictionary<char, int> CharCount = new();
 
-            foreach(var item in s)
+            foreach(var item in s.ToLower())
             {
                 if(!CharCount.ContainsKey(item))
                 {

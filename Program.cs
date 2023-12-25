@@ -131,7 +131,7 @@ namespace LeetCode
 
 
             //FIND LONGEST SUBSTRING 
-            LongestSubstring.Substring("abcdefa");
+            Console.WriteLine("Longest substrung " + LongestSubstring.Substring("abcdefa"));
 
 
             // ISLAND COUNT 

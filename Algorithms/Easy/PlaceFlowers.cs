@@ -8,35 +8,33 @@ namespace LeetCode.Algorithms.Easy
 {
     public static  class PlaceFlowers
     {
-
+        //https://leetcode.com/problems/can-place-flowers/
 
 
         public static bool CanPlaceFlowers(int[] flowerbed, int n)
         {
 
 
-            for(var i = 0; i < flowerbed.Length; i++)
-            {
+            var plot = 0;
+            var left = n;
 
-                if(Explore(flowerbed , n,i)) return true;
+            while (left > 0 && plot < flowerbed.Length)
+            {
+                if (flowerbed[plot] == 1)
+                {
+                    plot++;
+                }
+                else if (flowerbed[plot] == 0 && (plot == 0 || flowerbed[plot - 1] == 0) && (plot >= flowerbed.Length - 1 || flowerbed[plot + 1] == 0))
+                {
+                    flowerbed[plot] = 1;
+                    plot++;
+                    left--;
+                }
+
+                plot++;
             }
 
-            return false;
-        }
-
-        public static bool Explore(int[] flowerbed, int n,int col) {
-
-
-            if(col <0 ) return false ;
-            if(col> flowerbed.Length ) return false ;
-            if(col==0 ) n--;
-            if(n ==0 ) return true ;
-            Explore(flowerbed, n, col+1);
-            Explore(flowerbed, n, col-1);
-
-
-            return true;
-        
+            return left == 0;
         }
     }
 }
