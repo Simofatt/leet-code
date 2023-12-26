@@ -33,8 +33,6 @@ namespace LeetCode.Algorithms.Graph
         
         public static int LargestComponentFunc()
         {
-
-           
             foreach (var item in graph)
             {
                
