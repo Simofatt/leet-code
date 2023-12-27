@@ -20,9 +20,6 @@ namespace LeetCode.Algorithms.Graph
         public static string LargestNumber(int[] nums)
         {
 
-
-
-
             List<int> candidate = new List<int>();
             HashSet<int> visited = new HashSet<int>();
             List<List<int>> output = new();
