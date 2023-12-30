@@ -10,9 +10,7 @@ namespace LeetCode.Algorithms.Arrays
     public class SearchRotate
     {
 
-        // https://leetcode.com/problems/search-in-rotated-sorted-array/
-        //nums = [0,1,2,4,5,6,7], target = 3
-        // Output: 4,5,6,7,0,1,2  => 7
+       
 
 
         public static int Search(int[] nums, int target)
