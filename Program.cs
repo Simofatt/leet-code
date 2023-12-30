@@ -154,6 +154,8 @@ namespace LeetCode
 
             CountOccurence.count("@leetCODE@$/",3);
 
+
+            SearchRotate.Search(new[] { 4, 5, 6, 7, 0, 1, 2 }, 0); 
             Console.ReadKey();
         }
 
