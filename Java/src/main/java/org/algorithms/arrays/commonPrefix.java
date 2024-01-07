@@ -6,6 +6,7 @@ public class commonPrefix {
         String prefix = "" ;
         String prefixJ = "" ;
         String commonPrefix ="" ;
+
         for (var i =0 ; i<strs.length;i++) {
             prefix = strs[0].substring(0,i+1);
             for(var j =0; j<strs.length;j++) {
