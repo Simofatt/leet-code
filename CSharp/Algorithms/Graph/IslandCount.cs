@@ -40,7 +40,7 @@ namespace LeetCode.Algorithms.Graph
 
 
             public  static bool Explore(int line,int col, HashSet<string> visited, char[][] grid)
-        {
+            {
 
             if ( line>=grid.Length  || col>= grid[0].Length ) return false;
 
