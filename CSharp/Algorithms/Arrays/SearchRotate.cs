@@ -9,10 +9,6 @@ namespace LeetCode.Algorithms.Arrays
 {
     public class SearchRotate
     {
-
-       
-
-
         public static int Search(int[] nums, int target)
         {
             int start = 0;
