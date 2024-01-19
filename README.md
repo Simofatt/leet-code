@@ -12,9 +12,6 @@ This repository contains solutions to various LeetCode problems implemented in b
    - [C# Solution](./CSharp/Problem2_AddTwoNumbers.cs)
    - [Java Solution](./Java/Problem2_AddTwoNumbers.java)
 
-3. [Problem 3 - Longest Substring Without Repeating Characters](./CSharp/Problem3_LongestSubstring.cs)
-   - [C# Solution](./CSharp/Problem3_LongestSubstring.cs)
-   - [Java Solution](./Java/Problem3_LongestSubstring.java)
 
 
 
