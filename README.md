@@ -8,9 +8,7 @@ This repository contains solutions to various LeetCode problems implemented in b
    - [C# Solution](./CSharp/Problem1_TwoSum.cs)
    - [Java Solution](./Java/Problem1_TwoSum.java)
 
-2. [Problem 2 - Add Two Numbers](./CSharp/Problem2_AddTwoNumbers.cs)
-   - [C# Solution](./CSharp/Problem2_AddTwoNumbers.cs)
-   - [Java Solution](./Java/Problem2_AddTwoNumbers.java)
+
 
 
 
