@@ -4,12 +4,6 @@ This repository contains solutions to various LeetCode problems implemented in b
 
 ## Table of Contents
 
-1. [Problem 1 - Two Sum](./CSharp/Problem1_TwoSum.cs)
-   - [C# Solution](./CSharp/Problem1_TwoSum.cs)
-   - [Java Solution](./Java/Problem1_TwoSum.java)
-
-
-
 
 
 
