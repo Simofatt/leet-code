@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-        commonPrefix.LongestCommonPrefix(new String[] {"flower","flow","flight"}) ;
+        commonPrefix.longestCommonPrefix(new String[] {"flower","flow","flight"}) ;
     }
 
 
