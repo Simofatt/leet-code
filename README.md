@@ -4,9 +4,6 @@ This repository contains solutions to various LeetCode problems implemented in b
 
 ## Table of Contents
 
-
-
-
 ## How to Use
 
 Each problem folder contains separate files for C# and Java solutions. You can copy the code directly from the provided links and paste it into your IDE for testing or directly on LeetCode.
